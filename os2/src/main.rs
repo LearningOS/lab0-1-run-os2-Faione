@@ -34,6 +34,7 @@ pub fn rust_main() -> ! {
     clear_bss();
     logging::init();
     println!("[kernel] Hello, world!");
+
     trap::init();
     batch::init();
     batch::run_next_app();
